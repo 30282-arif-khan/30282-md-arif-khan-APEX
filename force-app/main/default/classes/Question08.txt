@@ -1,0 +1,7 @@
+(a)
+First of all I would configure the api key in the Named Credential 
+section of my Salesforce Org. Then I call it out from Apex class.
+
+
+
+(b)

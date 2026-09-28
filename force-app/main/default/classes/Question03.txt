@@ -1,0 +1,10 @@
+(a)
+
+if(Amount==NULL || Amount !> 0){
+
+
+
+
+
+
+}

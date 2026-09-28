@@ -1,0 +1,12 @@
+(b)
+
+List<Account> accList =[
+
+SELECT Id, Name , Status
+
+FROM Account 
+
+WHERE Status = 'Active'
+
+
+]

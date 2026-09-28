@@ -1,0 +1,14 @@
+(a)
+
+Record level access allows users to access specific records. On the other hand
+Object level access allows users to access object. Record level access 
+can be achieved by permission sets.
+
+
+
+(b)
+public with sharing class dataAccess(){
+
+
+
+}

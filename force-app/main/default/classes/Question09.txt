@@ -1,0 +1,55 @@
+(a)
+
+The given codes implement the DML operation insilde loop. This is the major 
+scalability, governor-limit and maintainability problems in this
+implementation.
+
+
+
+(b)
+
+public static void updateContacts(List<Account> accounts) {
+
+
+    List<Contact> contactsToUpdate = new List<Contact>();
+
+        for (Account acc : accounts) {
+
+            List<Contact> contacts = [
+            SELECT Id, AccountId, Description
+            FROM Contact
+            WHERE AccountId = :acc.Id
+                                    ];
+
+
+        for (Contact con : contacts) {
+        if (acc.Industry == 'Technology') {
+        con.Description = 'Technology Customer';
+        contactsToUpdate.add(con);
+        }
+        }
+    }
+
+    update contactsToUpdate;
+}
+
+
+(c)
+
+if (acc.Industry == 'Technology') {
+        if(con.Description != 'Technology Customer'){
+
+            con.Description = 'Technology Customer'
+            contactsToUpdate.add(con);
+
+        }
+        
+        }
+
+if(!contactsToUpdate.isBlank()){
+
+    update accountsToUpdate;
+
+}
+
+
